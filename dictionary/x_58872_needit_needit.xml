@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element choice="3" default="legal" label="New Field1" mandatory="true" max_length="40" name="new_field_1" type="choice">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Dropdown with none" sequence="0" value="Dropdown with none"/>
+                <element inactive_on_update="false" label="Human Resources" sequence="0" value="hr"/>
+                <element inactive="true" inactive_on_update="true" label="Dropdown without none" sequence="1" value="Dropdown without none"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Your Department Choice" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element label="New Field 2" max_length="40" name="new_field_2" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" choice="1" default="requested" label="State" max_length="1024" name="state" type="choice">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Closed Complete" sequence="0" value="Closed Complete"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Awaiting Approval" sequence="1" value="awaiting approval"/>
+                <element inactive="true" inactive_on_update="true" label="Open" sequence="1" value="Open"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive="true" inactive_on_update="true" label="Work in Progress" sequence="2" value="Work in Progress"/>
+                <element inactive_on_update="false" label="Awaiting Feedback" sequence="3" value="awaiting feedback"/>
+                <element inactive_on_update="false" label="Withdrawn" sequence="4" value="withdrawn"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="New Currency" mandatory="true" max_length="20" name="u_currency_2" type="currency"/>
+        <element label="New Data Structure" max_length="800" name="u_data_structure_1" type="data_structure"/>
+        <element label="New Date" max_length="40" name="u_glide_date_2" type="glide_date"/>
+        <element label="New Date/Time" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Your Department Choice" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources 1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Human Resources 2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="Facilities 1" sequence="2" value="facilities1"/>
+                <element inactive_on_update="false" label="Facilities 2" sequence="3" value="facilities2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="4" value="legal1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal2"/>
+                <element inactive_on_update="false" label="Your Department Choice 1" sequence="6" value="your_choice 1"/>
+                <element inactive_on_update="false" label="Your Department Choice 2" sequence="7" value="your_choice 2"/>
+            </choice>
+        </element>
+    </element>
+</database>
